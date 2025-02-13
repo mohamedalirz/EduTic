@@ -1,0 +1,62 @@
+{
+    "2eme": [
+        {
+            "year": "2024/2025",
+            "title": "Mathématiques",
+            "professor": "Mme. Ben Salah",
+            "tags": [
+                "Algèbre",
+                "Géométrie"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "Informatique",
+            "professor": "M. Kacem",
+            "tags": [
+                "Algorithmique",
+                "Programmation"
+            ]
+        }
+    ],
+    "3eme": [
+        {
+            "year": "2024/2025",
+            "title": "Physique",
+            "professor": "M. Kechrid Shahed",
+            "tags": [
+                "Mécanique",
+                "Électricité"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "Chimie",
+            "professor": "Mme. Aouadi",
+            "tags": [
+                "Réactions",
+                "Molécules"
+            ]
+        }
+    ],
+    "bac": [
+        {
+            "year": "2024/2025",
+            "title": "Philosophie",
+            "professor": "M. Rzeygui Med Ali",
+            "tags": [
+                "Logique",
+                "Éthique"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "SVT",
+            "professor": "Mme. Lamouchi",
+            "tags": [
+                "Biologie",
+                "Génétique"
+            ]
+        }
+    ]
+}

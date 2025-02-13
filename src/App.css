@@ -1,0 +1,602 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3;
+}
+
+/* Header */
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to move if needed */
+  
+  align-items: center;
+  padding: 25px;
+  background-color: #374151;
+}
+.nav-items{
+  position: absolute;
+  left: 37%;
+}
+
+
+nav .nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 5px;
+  background: #1e40af;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  
+}
+
+nav a:hover {
+  background: #2563eb;
+}
+.edutic-logo{
+  width: 4%;
+  height: 60px;
+}
+.edutic-logo img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.menu {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle .bars {
+  margin-left: 13px;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: rotate(135deg);
+  margin-left: 0;
+  transform-origin: center;
+  transition-duration: .3s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  transform: rotate(45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  transform: rotate(-45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+.menu-container {
+  background-color: rgb(23, 97, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 19%;
+  overflow: hidden;
+  clip-path: inset(0% 0% 0% 0% round 10px);
+  transition: all 0.4s;
+  z-index: 1000;
+}
+.menu-list {
+  padding: 8px 10px;
+  border-radius: inherit;
+  transition: background-color 0.2s 0s;
+  position: relative;
+  opacity: 1;
+}
+.menu-list a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-list::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 95%;
+}
+
+.menu-list:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+/* Profile Dropdown Tooltip */
+.profile-side {
+  position: absolute;
+  right: 0;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 15%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to move to a new row */
+  justify-content: center; /* Centers the cards */
+  gap: 40px; /* Adds spacing between cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 350px;
+  width: 100%; /* Makes it flexible */
+  max-width: 280px; /* Prevents it from getting too wide */
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #374151;
+  box-shadow: -1rem 0 3rem #00000067;
+  transition: 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-0.4rem);
+}
+
+.card-author {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.author-name {
+  color: #f7f7f8;
+}
+
+.author-name-prefix {
+  color: #e52e71;
+  font-weight: 600;
+}
+
+.author-avatar span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin: 16px 10px;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.card-header {
+  margin-bottom: auto;
+  color: #ffffff;
+  background: #1e40af;
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #ffffff;
+}
+
+.card-header .title {
+  font-size: 25px;
+  margin: 0;
+  cursor: pointer;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.tags {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  line-height: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Adds space between tags */
+  justify-content: center;
+}
+
+.tags a {
+  font-weight: 700;
+  color: #f0f0fa;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  background: #1e40af;
+  border: 3px solid #d0cbd8;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem;
+}
+
+.tags a:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-color: white;
+}
+
+
+/* Footer */
+footer {
+  background: #374151;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+footer .footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Signup Button */
+.btn-signup {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  animation: pulse512 1.5s infinite;
+}
+
+/* Button Animation */
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  
+
+  .profile-side {
+    width: 180px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .course-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  nav {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+  }
+  .edutic-logo{
+    display: none;
+  }
+  #checkbox{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .profile-side {
+    width: 200px;
+  }
+
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Makes it adapt to smaller screens */
+    max-width: 280px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+.container-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 20px; 
+  gap: 20px; 
+}
+
+.card_box_plan {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card_box_plan:hover {
+  transform: scale(0.9);
+}
+
+.card_box_plan span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Premium Card */
+.premium span::before {
+  content: 'Premium';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+/* Half Premium Card */
+.half-premium span::before {
+  content: 'Half premium';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #04800e 0%, #37fc37  51%, #11851a  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+/* Standard Card */
+.standar span::before {
+  content: 'Standard';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #5e5f5e 0%, #c0c2c0  51%, #3c3d3c  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+.hidden{
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container-plan {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .card_box_plan {
+    width: 180px;
+    height: 220px;
+  }
+  
+  .card_box_plan span {
+    width: 130px;
+    height: 130px;
+  }
+
+  .premium span::before,
+  .half-premium span::before,
+  .standar span::before {
+    font-size: 12px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-plan {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-items{
+    display: none;
+  }
+  .main{
+    display: block;
+  }
+  .card_box_plan {
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+  }
+  menu{
+    display: block;
+  }
+
+  .card_box_plan span {
+    width: 100px;
+    height: 100px;
+  }
+
+  .premium span::before,
+  .half-premium span::before,
+  .standar span::before {
+    font-size: 10px;
+    height: 30px;
+  }
+} 
+@media (max-width: 356px) {
+  nav {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
