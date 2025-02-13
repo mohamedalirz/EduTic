@@ -1,9 +1,6 @@
 import react from "react";
 
 export class Footer extends react.Component{
-    constructor(props){
-      super(props)
-    }
   
     render(){
       return(

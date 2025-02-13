@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import react from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,9 +8,6 @@ import Courses from "./Pages/Courses";
 import Plans from "./Pages/Plans";
 
 class Container extends react.Component{
-  constructor(props){
-    super(props)
-  }
 
   render(){
     return(
