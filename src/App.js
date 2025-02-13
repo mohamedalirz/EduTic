@@ -30,8 +30,8 @@ class App extends react.Component{
     this.state = {
       user: {
         name:"Med Jihed Moueti",
-        genre:"F",
-        classe:"2eme",
+        genre:"M",
+        classe:"bac",
       }
     };
   }

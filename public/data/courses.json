@@ -3,7 +3,7 @@
         {
             "year": "2024/2025",
             "title": "Mathématiques",
-            "professor": "Mme. Ben Salah",
+            "professor": "M. Amaya Med Amine",
             "tags": [
                 "Algèbre",
                 "Géométrie"
@@ -12,50 +12,98 @@
         {
             "year": "2024/2025",
             "title": "Informatique",
-            "professor": "M. Kacem",
+            "professor": "M. Rzeygui Med Ali",
             "tags": [
                 "Algorithmique",
                 "Programmation"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "Physique",
+            "professor": "M. Kechrid Shahed",
+            "tags": [
+                "Physique",
+                "Chimie"
             ]
         }
     ],
     "3eme": [
         {
             "year": "2024/2025",
-            "title": "Physique",
-            "professor": "M. Kechrid Shahed",
+            "title": "Mathématiques",
+            "professor": "M. Amaya Med Amine",
             "tags": [
-                "Mécanique",
-                "Électricité"
+                "Algèbre",
+                "Géométrie"
             ]
         },
         {
             "year": "2024/2025",
-            "title": "Chimie",
-            "professor": "Mme. Aouadi",
+            "title": "Algorithme et programmation",
+            "professor": "M. Rzeygui Med Ali",
             "tags": [
-                "Réactions",
-                "Molécules"
+                "Algorithmique",
+                "Programmation"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "STI",
+            "professor": "M. Rzeygui Med Ali",
+            "tags": [
+                "HTML",
+                "CSS",
+                "Java Script"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "Physique",
+            "professor": "M. Kechrid Shahed",
+            "tags": [
+                "Physique",
+                "Chimie"
             ]
         }
     ],
     "bac": [
         {
             "year": "2024/2025",
-            "title": "Philosophie",
-            "professor": "M. Rzeygui Med Ali",
+            "title": "Mathématiques",
+            "professor": "M. Amaya Med Amine",
             "tags": [
-                "Logique",
-                "Éthique"
+                "Algèbre",
+                "Géométrie"
             ]
         },
         {
             "year": "2024/2025",
-            "title": "SVT",
-            "professor": "Mme. Lamouchi",
+            "title": "Algorithme et programmation",
+            "professor": "M. Rzeygui Med Ali",
             "tags": [
-                "Biologie",
-                "Génétique"
+                "Algorithmique",
+                "Programmation"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "STI",
+            "professor": "M. Rzeygui Med Ali",
+            "tags": [
+                "HTML",
+                "CSS",
+                "Java Script",
+                "PHP"
+            ]
+        },
+        {
+            "year": "2024/2025",
+            "title": "Physique",
+            "professor": "M. Kechrid Shahed",
+            "tags": [
+                "Physique",
+                "Chimie"
             ]
         }
     ]
